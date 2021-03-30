@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * @author Prénom Nom courriel
+ * @author Alex Ferland 2063726@csfoy.ca
  *
  * TABLE DES MATIERES
  * Normalize
@@ -35,5 +35,95 @@
 
 /* Mise en page
    ========================================================================== */
+@import url(_form.css);
 
-.nom
+/*couleur d'arriere-plan*/
+body{
+    background-image: linear-gradient(to top,rgb(250,255,234),rgb(147,201,183));
+}
+
+
+
+:focus {
+    outline: #349194 auto 1px;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+aside {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+fieldset {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.nomComplet,
+.telephone,
+.date,
+.question{
+    border: solid black 3px;
+}
+
+.tiret {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+fieldset input,
+fieldset select {
+    width: 100%;
+}
+
+
+
+/*Section de la question*/
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+label img {
+    filter: grayscale(100%);
+}
+input[type=radio]:focus + label img {
+    filter: grayscale(0);
+}
+input[type=radio]:hover + label img {
+    filter: grayscale(0);
+}
+input[type=radio]:checked + label img {
+    border: solid black 3px;
+}
+
+
+.regleConcours,
+.infolettre {
+    margin-left: 2rem;
+}
+
+input[type=button] {
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding: 10px 7px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
+
+
